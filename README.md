@@ -16,3 +16,35 @@ Dataset link: https://inside.fifa.com/fifa-world-ranking/men
 
 # 2. Analysis
 
+To get every group of 48 teams in the group stage. I prompted a line in Claude that process the Elo team file to generate table contains match group of 48 nations that qualified for the World Cup 2026. 
+
+Here is the prompt:
+
+```text
+Clean the data table which pick only the nation that is qualified in the world cup 2026 and add a ELO raing column next to it
+```
+
+Here is the file returned by Claude:
+
+...
+
+```text
+Question: Which group in the WC2026 is the hardest/easiest to compete in?
+```
+
+| Group | Average ELO | Median ELO |
+|---|---|---|
+| A | 1553.31 | 1548.68 |
+| B | 1511.77 | 1504.90 |
+| C | 1579.35 | 1629.22 |
+| D | 1590.41 | 1592.54 |
+| E | 1542.48 | 1569.70 |
+| F | 1600.34 | 1585.68 |
+| G | 1549.94 | 1590.98 |
+| H | 1585.69 | 1548.48 |
+| I | 1639.62 | 1620.76 |
+| J | 1608.36 | 1584.22 |
+| K | 1599.42 | 1586.39 |
+| L | 1606.99 | 1627.02 |
+
+
