@@ -51,6 +51,8 @@ I calculate the mean and median ELO of each group using the "average" and "media
 
 Chart
 
+<img src="Mean Median.png" alt="Mean vs Median ELO by Group" width="300" height="200">
+
 ![Mean vs Median ELO by Group](images/Mean Median.png)
 
 
