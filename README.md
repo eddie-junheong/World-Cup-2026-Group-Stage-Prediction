@@ -53,5 +53,11 @@ Chart
 
 <img width="1262" height="643" alt="Image" src="https://github.com/user-attachments/assets/39ae604c-0736-4bb9-922b-9ad478c66491" />
 
+The chart above gives some insight about mean and median ELO by each group.
 
+- If a group with mean and median are the same,it means that means that group is ELO balance between all team in the same group (Group A, Group B,etc)
+- If a group with median higher than mean, it means that there is a very low ranking team that pull the whole average ELO down (Outliners). The other three in that group is a very strong individuals.
+- If a group with mean higher than median, it means that there is a very high ranking team pull the whole average ELO up. Which makes them a very high favor to qualify for the next round.
+
+From the chart, we also see group I (France, Senegal, Norway, Iraq) is the group with the highest mean and median which means that this group is the hardest to compete in. On the other hand, group B (Switzerland, Canada, Qatar, Bosnia and Herzegovina) has the lowest ELO which makes it statistically the easiest group to compete in. 
 
