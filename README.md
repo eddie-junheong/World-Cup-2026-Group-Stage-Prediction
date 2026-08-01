@@ -32,6 +32,8 @@ Here is the file returned by Claude:
 Question: Which group in the WC2026 is the hardest/easiest to compete in?
 ```
 
+I calculate the mean and median ELO of each group using the "average" and "median" fomular in Excel.
+
 | Group | Average ELO | Median ELO |
 |---|---|---|
 | A | 1553.31 | 1548.68 |
@@ -46,5 +48,10 @@ Question: Which group in the WC2026 is the hardest/easiest to compete in?
 | J | 1608.36 | 1584.22 |
 | K | 1599.42 | 1586.39 |
 | L | 1606.99 | 1627.02 |
+
+Chart
+
+![Mean vs Median ELO by Group](images/Mean vs Median ELO by Group.png)
+
 
 
