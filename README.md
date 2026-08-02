@@ -140,14 +140,20 @@ Because we are using the data from the 3 latest WC (2014 – 2018 – 2022). The
 
 Example: 
 A match between Portugal (ELO = 1766) and Uzbekistan (ELO = 1459)
-- Step 1: ELO difference
-1766 – 1459 = 307
-- Step 2: Calculate the win probability (using the ELO calculation formular)
-P(Portugal wins) =1/(1+10^(-307/400)) = 0.854 = 85.4%
-P(Uzbekistan wins) = 1/(1+10^(-307/400)) = 0.146 = 14.6%
+- Step 1:
+  
+  ELO difference: 1766 – 1459 = 307
+- Step 2:
+  Calculate the win probability (using the ELO calculation formular)
+  
+  P(Portugal wins) =1/(1+10^(-307/400)) = 0.854 = 85.4%
+  
+  P(Uzbekistan wins) = 1/(1+10^(-307/400)) = 0.146 = 14.6%
 - Step 3: Calculate λ (xG) using base rate 1.33
-λ Portugal = 1.33 × (0.854 / 0.5) = 1.33 × 1.708 = 2.27 goals
-λ Uzbekistan = 1.33 × (0.146 / 0.5) = 1.33 × 0.292 = 0.39 goals
+
+  λ Portugal = 1.33 × (0.854 / 0.5) = 1.33 × 1.708 = 2.27 goals
+  
+  λ Uzbekistan = 1.33 × (0.146 / 0.5) = 1.33 × 0.292 = 0.39 goals
 
 | | Portugal | Uzbekistan |
 |---|---|---|
