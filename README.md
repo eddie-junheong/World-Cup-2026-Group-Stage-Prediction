@@ -156,5 +156,6 @@ P(Uzbekistan wins) = 1/(1+10^(-307/400)) = 0.146 = 14.6%
 | xG | 2.27 | 0.39 |
 
 Conclusion: Portugal will score 2 or more goals and Uzbekistan will score 0
+
 Prediction: Portugal 2-0 Uzbekistan 
 
