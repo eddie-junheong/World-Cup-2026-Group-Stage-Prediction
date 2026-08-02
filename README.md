@@ -85,7 +85,7 @@ By looking at this chart, we can confirm that Higher ELO team win most of the ti
 We can also from the table, find out and sort out the matches that the win probabilities is higher than 70% but results in a draw or upset. Using the FILTER function in Excel, I fill out the 3 tournaments within table. This is the table I got from that. 
 
 | Date | Year | Higher ELO Team | Lower ELO Team | Higher ELO | Lower ELO | ELO Diff | Win Prob (Higher %) | Goals (Higher ELO) | Goals (Lower ELO) | Result |
-|---|---|---|---|---|---|---|---|---|---|---|
+|----|----|----|----|----|----|----|----|----|----|----|
 | 2014-06-14 | 2014 | Uruguay | Costa Rica | 1954 | 1789 | 166 | 72.2% | 1 | 3 | Upset |
 | 2014-06-17 | 2014 | Brazil | Mexico | 2162 | 1918 | 244 | 80.3% | 0 | 0 | Draw |
 | 2014-06-21 | 2014 | Germany | Ghana | 2127 | 1790 | 337 | 87.4% | 2 | 2 | Draw |
