@@ -78,4 +78,8 @@ I prompted Claude to clean up the data in the results file only use 3 latest tou
 
 Chart
 
+<img width="1053" height="630" alt="Image" src="https://github.com/user-attachments/assets/8e8591da-a576-4482-b524-3c7a2cc1480e" />
 
+By looking at this chart, we can confirm that Higher ELO team win most of the time, but the chance that lower ELO can make some magical outcome is high like in the 2018 tournament where it got up to 25% of all 64 matches. Aside from winning and losing, draw is a big factor in football. Where the drawing probabilities is approximately one in every four game which is around 25% of the time.
+
+We can also from the table, find out and sort out the matches that the win probabilities is higher than 70% but results in a draw or upset. Using the FILTER function in Excel, I fill out the 3 tournaments within table. This is the table I got from that. 
