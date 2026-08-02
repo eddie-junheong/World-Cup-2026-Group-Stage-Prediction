@@ -83,3 +83,32 @@ Chart
 By looking at this chart, we can confirm that Higher ELO team win most of the time, but the chance that lower ELO can make some magical outcome is high like in the 2018 tournament where it got up to 25% of all 64 matches. Aside from winning and losing, draw is a big factor in football. Where the drawing probabilities is approximately one in every four game which is around 25% of the time.
 
 We can also from the table, find out and sort out the matches that the win probabilities is higher than 70% but results in a draw or upset. Using the FILTER function in Excel, I fill out the 3 tournaments within table. This is the table I got from that. 
+
+| Date | Year | Higher ELO Team | Lower ELO Team | Higher ELO | Lower ELO | ELO Diff | Win Prob (Higher %) | Goals (Higher ELO) | Goals (Lower ELO) | Result |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2014-06-14 | 2014 | Uruguay | Costa Rica | 1954 | 1789 | 166 | 72.2% | 1 | 3 | Upset |
+| 2014-06-17 | 2014 | Brazil | Mexico | 2162 | 1918 | 244 | 80.3% | 0 | 0 | Draw |
+| 2014-06-21 | 2014 | Germany | Ghana | 2127 | 1790 | 337 | 87.4% | 2 | 2 | Draw |
+| 2014-06-28 | 2014 | Brazil | Chile | 2146 | 1995 | 152 | 70.5% | 1 | 1 | Draw |
+| 2014-07-05 | 2014 | Netherlands | Costa Rica | 2128 | 1875 | 253 | 81.1% | 0 | 0 | Draw |
+| 2018-06-16 | 2018 | Argentina | Iceland | 2027 | 1822 | 205 | 76.5% | 1 | 1 | Draw |
+| 2018-06-17 | 2018 | Germany | Mexico | 2093 | 1935 | 158 | 71.3% | 0 | 1 | Upset |
+| 2018-06-17 | 2018 | Brazil | Switzerland | 2189 | 1927 | 261 | 81.8% | 1 | 1 | Draw |
+| 2018-06-19 | 2018 | Colombia | Japan | 1983 | 1782 | 202 | 76.2% | 1 | 2 | Upset |
+| 2018-06-25 | 2018 | Spain | Morocco | 2099 | 1787 | 313 | 85.8% | 2 | 2 | Draw |
+| 2018-06-27 | 2018 | Germany | South Korea | 2069 | 1756 | 314 | 85.9% | 0 | 2 | Upset |
+| 2018-07-01 | 2018 | Spain | Russia | 2082 | 1757 | 324 | 86.6% | 1 | 1 | Draw |
+| 2018-07-06 | 2018 | Brazil | Belgium | 2203 | 2055 | 148 | 70.1% | 1 | 2 | Upset |
+| 2018-07-07 | 2018 | Croatia | Russia | 1983 | 1771 | 212 | 77.2% | 2 | 2 | Draw |
+| 2022-11-22 | 2022 | Denmark | Tunisia | 2018 | 1826 | 192 | 75.2% | 0 | 0 | Draw |
+| 2022-11-22 | 2022 | Argentina | Saudi Arabia | 2173 | 1749 | 423 | 92.0% | 1 | 2 | Upset |
+| 2022-11-25 | 2022 | Netherlands | Ecuador | 2109 | 1935 | 174 | 73.1% | 1 | 1 | Draw |
+| 2022-11-27 | 2022 | Belgium | Morocco | 2068 | 1870 | 198 | 75.7% | 0 | 2 | Upset |
+| 2022-11-28 | 2022 | South Korea | Ghana | 1893 | 1677 | 215 | 77.6% | 2 | 3 | Upset |
+| 2022-11-28 | 2022 | Serbia | Cameroon | 1940 | 1707 | 233 | 79.2% | 3 | 3 | Draw |
+| 2022-11-30 | 2022 | France | Tunisia | 2074 | 1811 | 263 | 81.9% | 0 | 1 | Upset |
+| 2022-12-01 | 2022 | Spain | Japan | 2112 | 1898 | 213 | 77.4% | 1 | 2 | Upset |
+| 2022-12-02 | 2022 | Brazil | Cameroon | 2253 | 1722 | 531 | 95.5% | 0 | 1 | Upset |
+| 2022-12-02 | 2022 | Portugal | South Korea | 2091 | 1854 | 237 | 79.6% | 1 | 2 | Upset |
+| 2022-12-09 | 2022 | Brazil | Croatia | 2217 | 1997 | 220 | 78.0% | 1 | 1 | Draw |
+
