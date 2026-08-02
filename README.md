@@ -112,3 +112,49 @@ We can also from the table, find out and sort out the matches that the win proba
 | 2022-12-02 | 2022 | Portugal | South Korea | 2091 | 1854 | 237 | 79.6% | 1 | 2 | Upset |
 | 2022-12-09 | 2022 | Brazil | Croatia | 2217 | 1997 | 220 | 78.0% | 1 | 1 | Draw |
 
+```text
+Question: What is the win probability of each team in the Group Stage of the World Cup 2026 using the model?
+```
+Using Claude, we able to extract entire matchup of the grouping stage of the World Cup 2026. There will be a total of 72 matches. In this model, we assume there is no draw matches, only win or lose in a match.  Using the formula “P(A wins) = 1 / (1 + 10^(−ΔElo / 400))” from the ELO calculation method, we can calculate the win percentage of home team and away team. If a team higher than 50% win percentage will be considered a winning team. This is the result of 72 matches in the grouping stage.
+
+... file ***
+
+# 3. Poisson Distribution
+
+Although ELO gives us some insight into which teams is having a better chance to win the match, it missing out the most important things in a football match which is one’s team goal prediction. How many goal will Team A gonna score, and how many goal will Team B gonna score against Team A. In the real world application, football analysts use Poisson distribution; a statistical method that models the probability of a team scoring a specific number of goals in a match aka xG – expected goal. This methods assume every goal is independent from the other, which means a goal from team A doesn’t affect the play styles of team B.
+
+Fomular:
+
+```text
+P(X = k) = (λ^k × e^−λ) / k!
+```
+Formular calculates the probability of one’s team goal of scoring k times (e.g k = 0,1, 2, 3, …). Lambda λ is the average goal one’s team will score if that match is replayed hundred or thousands of times. For example, Brazil with lambda = 2.62 means that if you replayed this match 100 times, Brazil would average 2.62 goals across all those games. Some replays they score 0, some they score 4, but the central tendency is 2.62. But the lambda can be varies depends on how strong the other team is. If Brazil face a weaker team, lambda will most likely be higher than facing a strong team like France. 
+
+Because we are using the data from the 3 latest WC (2014 – 2018 – 2022). The average number of goals score per match of 2014 is 2.67, 2018 is 2.64, 2022 is 2.69. By sum these number together, we got (2.67 + 2.64 + 2.69) ÷ 3 = 2.667 goals per match, 2.667 ÷ 2 = 1.333 goals per team per match. So the lambda rate we using for this analysis is λ = 1.333
+
+- λ_A = 1.333 × (P_A / 0.5)
+- λ_B = 1.333 × (P_B / 0.5)
+
+λ_A: expected number of goals team A would score against team B by using win probability of ones team divided by 0.5 (number to even out everything)
+λ_B: expected number of goals team B would score against team A by using win probability of ones team divided by 0.5
+
+Example: 
+A match between Portugal (ELO = 1766) and Uzbekistan (ELO = 1459)
+- Step 1: ELO difference
+1766 – 1459 = 307
+- Step 2: Calculate the win probability (using the ELO calculation formular)
+P(Portugal wins) =1/(1+10^(-307/400)) = 0.854 = 85.4%
+P(Uzbekistan wins) = 1/(1+10^(-307/400)) = 0.146 = 14.6%
+- Step 3: Calculate λ (xG) using base rate 1.33
+λ Portugal = 1.33 × (0.854 / 0.5) = 1.33 × 1.708 = 2.27 goals
+λ Uzbekistan = 1.33 × (0.146 / 0.5) = 1.33 × 0.292 = 0.39 goals
+
+| | Portugal | Uzbekistan |
+|---|---|---|
+| ELO | 1766 | 1459 |
+| Win Probability | 85.4% | 14.6% |
+| xG | 2.27 | 0.39 |
+
+Conclusion: Portugal will score 2 or more goals and Uzbekistan will score 0
+Prediction: Portugal 2-0 Uzbekistan 
+
