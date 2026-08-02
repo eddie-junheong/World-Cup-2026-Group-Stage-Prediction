@@ -61,3 +61,21 @@ The chart above gives some insight about mean and median ELO by each group.
 
 From the chart, we also see group I (France, Senegal, Norway, Iraq) is the group with the highest mean and median which means that this group is the hardest to compete in. On the other hand, group B (Switzerland, Canada, Qatar, Bosnia and Herzegovina) has the lowest ELO which makes it statistically the easiest group to compete in. 
 
+```text
+Question: Do Elo really predict the outcome of the match? Will smaller Elo team always lose to higher Elo team?
+```
+
+By using the same Elo calculation to evaluate chess Elo of these chess master.
+
+Fomular:
+
+```text
+P(A wins) = 1 / (1 + 10^(−ΔElo / 400)) or 1/(1+10^(-(A2-B2)/400))
+```
+I prompted Claude to clean up the data in the results file only use 3 latest tournament of the 2014, 2018 and 2022 WC tournament. The table shows the ELO diff, goals, and the results between two competitors of the whole tournament. 
+
+... file ***
+
+Chart
+
+
